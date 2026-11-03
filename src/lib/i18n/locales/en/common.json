@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "certificates": "Certificates",
+    "blog": "Blog",
+    "contact": "Contact",
+    "menu": "Toggle menu"
+  },
+  "theme": { "toggle": "Toggle theme" },
+  "language": { "switch": "العربية", "label": "Switch to Arabic" },
+ "hero": {
+  "name": "Mohammad Moaaz Albari",
+  "role": "Front-end Developer",
+  "tagline": "I build fast, responsive web apps with React, Next.js and TypeScript, from authentication and admin dashboards to complete e-commerce stores.",
+  "ctaContact":"Contact",
+  "ctaProjects":"Projects"
+  },
+ "about": {
+  "body": "Front-end developer with 1+ year of professional experience building scalable, responsive web applications with React, Next.js, TypeScript, Redux Toolkit and Tailwind CSS. I focus on reusable UI components, clean state management and RESTful API integration, and I've delivered complete e-commerce projects with authentication, admin dashboards and Firebase-backed data.",
+  "stats": { "years": "Years of experience", "stores": "E-commerce stores", "certificates": "Certificates" },
+  "title":"About"
+  },
+  "validation": {
+    "name": "Name must be between 2 and 80 characters",
+    "email": "Please enter a valid email address",
+    "subject": "Subject must be between 3 and 120 characters",
+    "message": "Message must be between 10 and 2000 characters"
+  },
+  "skills": {
+  "title": "Skills",
+  "groups": {
+    "frontend": "Frontend",
+    "languages": "Languages",
+    "tools": "Tools & Platforms",
+    "infra": "IT & Infrastructure"
+  }
+},
+"experience": { "title": "Experience & Education" },
+"projects": {
+  "title": "Featured projects",
+  "subtitle": "Two complete e-commerce stores, live and open source.",
+  "filter": { "all": "All" },
+  "categories": { "ecommerce": "E-commerce", "web": "Web", "mobile": "Mobile" },
+  "viewCase": "View case study",
+  "liveDemo": "Live demo",
+  "sourceCode": "Source code",
+  "back": "Back to projects",
+  "role": "My role",
+  "features": "Key features",
+  "techStack": "Tech stack",
+  "preview": "Live preview",
+  "screenshots": "Screenshots",
+  "openLive": "Open in new tab"
+},
+"certificates": {
+  "title": "Certificates",
+  "subtitle": "Continuous learning in networking, Linux and containers.",
+  "viewCredential": "View credential"
+},
+"contact": {
+  "title": "Get in touch",
+  "subtitle": "Have a project or an opportunity in mind? Send me a message and I'll get back to you.",
+  "email": "Email",
+  "location": "Location",
+  "locationValue": "Damascus, Syria",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending..."
+  },
+  "successTitle": "Message sent!",
+  "successText": "Thanks for reaching out. I'll reply as soon as possible.",
+  "errorTitle": "Something went wrong",
+  "errorText": "Your message could not be sent. Please try again in a moment."
+},
+"blog": {
+  "title": "Blog",
+  "subtitle": "Notes on what I build and learn.",
+  "viewAll": "View all posts",
+  "readMore": "Read article",
+  "back": "Back to blog",
+  "searchLabel": "Search posts",
+  "searchPlaceholder": "Search posts...",
+  "empty": "No posts yet. Check back soon!",
+  "noResults": "No posts match your search."
+},
+"meta": {
+  "siteName": "Moaaz Albari",
+  "title": "Moaaz Albari | Front-end Developer",
+  "description": "Front-end developer building fast, responsive web apps with React, Next.js and TypeScript."
+},
+"footer": {
+  "rights": "All rights reserved.",
+  "built": "Built with Next.js, TypeScript and Tailwind CSS.",
+  "social": "Social links"
+},
+"notFound": {
+  "title": "Page not found",
+  "text": "The page you're looking for doesn't exist or has moved.",
+  "home": "Back to home"
+},
+"a11y": { "skip": "Skip to main content" }
+}
