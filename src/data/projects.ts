@@ -28,6 +28,10 @@ export const projects: readonly Project[] = [
         ar: 'سلة مشتريات بـ Redux Toolkit متزامنة مع Firestore، وعملية دفع مع ملخص للطلب',
       },
       {
+        "en": "Implemented dark/light theme switching and bilingual support (Arabic/English) with dynamic RTL/LTR layout adaptation.",
+        "ar": "تم تنفيذ خاصية التبديل بين النمطين الداكن والفاتح، ودعم لغتين (العربية/الإنجليزية) مع تكييف ديناميكي لتخطيط الصفحة (من اليمين إلى اليسار أو من اليسار إلى اليمين)."
+      },
+      {
         en: 'Role-based admin access using Firebase Custom Claims and Firestore Security Rules',
         ar: 'صلاحيات إدارة قائمة على الأدوار عبر Firebase Custom Claims وقواعد أمان Firestore',
       },
