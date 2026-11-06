@@ -6,11 +6,13 @@ import { useParams } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
+import LinkButton from '@/components/ui/LinkButton';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { closeMobileMenu, toggleMobileMenu } from '@/store/slices/uiSlice';
 import type { Locale } from '@/lib/i18n/settings';
 import LanguageSwitcher from './LanguageSwitcher';
 import ThemeToggle from './ThemeToggle';
+import HashLink from '../ui/HashLink';
 
 /** Section ids shown in the navigation, in order. */
 const NAV_ITEMS = [
@@ -55,9 +57,9 @@ export default function Navbar() {
         <ul className="hidden items-center gap-1 lg:flex">
           {NAV_ITEMS.map((id) => (
             <li key={id}>
-              <Button variant="ghost" size="sm">
-                <Link href={`/${lang}#${id}`}>{t(`nav.${id}`)}</Link>
-              </Button>
+              <LinkButton href={`/${lang}#${id}`} variant="ghost" size="sm">
+                {t(`nav.${id}`)}
+              </LinkButton>
             </li>
           ))}
         </ul>
@@ -86,13 +88,13 @@ export default function Navbar() {
         >
           {NAV_ITEMS.map((id) => (
             <li key={id}>
-              <Link
+              <HashLink
                 href={`/${lang}#${id}`}
                 onClick={() => dispatch(closeMobileMenu())}
                 className="block rounded-md px-3 py-3 text-lg font-medium hover:bg-muted"
               >
                 {t(`nav.${id}`)}
-              </Link>
+              </HashLink>
             </li>
           ))}
         </ul>

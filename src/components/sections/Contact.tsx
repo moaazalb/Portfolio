@@ -52,7 +52,7 @@ export default async function Contact({ lang }: ContactProps) {
     <section id="contact" className="px-4 py-24">
       <div className="mx-auto max-w-6xl">
         <SectionHeading title={t('contact.title')} subtitle={t('contact.subtitle')} />
-        <div className="mt-12 grid gap-12 lg:grid-cols-5">
+       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-5">
           <Reveal className="space-y-4 lg:col-span-2">
             {items.map(({ icon: Icon, label, value, href }) => (
               <div key={label} className="flex items-center gap-4 rounded-2xl border bg-card p-4">

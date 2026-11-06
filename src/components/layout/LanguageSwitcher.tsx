@@ -5,6 +5,7 @@ import { useParams, usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import type { Locale } from '@/lib/i18n/settings';
+import LinkButton from '../ui/LinkButton';
 
 /**
  * Link that switches the current page between English and Arabic
@@ -25,10 +26,15 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <Button  variant="ghost" size="sm" onClick={rememberLocale}>
-      <Link href={segments.join('/')} hrefLang={target} aria-label={t('language.label')}>
-        {t('language.switch')}
-      </Link>
-    </Button>
+    <LinkButton
+      href={segments.join('/')}
+      hrefLang={target}
+      variant="ghost"
+      size="sm"
+      aria-label={t('language.label')}
+      onClick={rememberLocale}
+    >
+      {t('language.switch')}
+    </LinkButton>
   );
 }

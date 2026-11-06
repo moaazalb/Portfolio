@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import Reveal from '@/components/ui/Reveal';
 import { getTranslation } from '@/lib/i18n/server';
 import type { Locale } from '@/lib/i18n/settings';
+import LinkButton from '../ui/LinkButton';
 
 interface HeroProps {
   /** Active locale. */
@@ -40,15 +41,13 @@ export default async function Hero({ lang }: HeroProps) {
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">{t('hero.tagline')}</p>
         </Reveal>
         <Reveal delay={0.4} className="mt-10 flex flex-wrap gap-4">
-          <Button  size="lg" className="bg-brand-gradient border-0 text-white">
-            <Link href={`/${lang}#projects`} className="inline-flex items-center justify-center gap-2">
-              {t('hero.ctaProjects')}
-              <ArrowRight className="ms-2 size-4 rtl:rotate-180" />
-            </Link>
-          </Button>
-          <Button  size="lg" variant="outline">
-            <Link href={`/${lang}#contact`}>{t('hero.ctaContact')}</Link>
-          </Button>
+         <LinkButton href={`/${lang}#projects`} size="lg" className="bg-brand-gradient border-0 text-white">
+          {t('hero.ctaProjects')}
+          <ArrowRight className="size-4 rtl:rotate-180" />
+        </LinkButton>
+        <LinkButton href={`/${lang}#contact`} size="lg" variant="outline">
+          {t('hero.ctaContact')}
+        </LinkButton>
         </Reveal>
       </div>
     </section>
